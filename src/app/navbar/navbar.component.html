@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" [class.navbarNotTop]="currentSection !== 'top'" [class.navbarTop]="currentSection === 'top'" data-spy="affix">
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse p-1" id="navbarSupportedContent">
+
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="navbar-brand rollOn" (click)="scrollTo('title')" [class.active]="currentSection === 'title'|| currentSection === 'top'" [class.inactive]="currentSection !== 'title'">HOME</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rollOn" (click)="scrollTo('slide1')" [class.active]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">O mnie</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rollOn" (click)="scrollTo('slide2')" [class.active]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">Technologie</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rollOn" (click)="scrollTo('slide3')" [class.active]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">Projekty</a>
+
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link rollOn" (click)="scrollTo('slide4')" [class.active]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">Kontakt</a>
+
+            </li>
+        </ul>
+
+    </div>
+
+</nav>
