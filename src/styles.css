@@ -21,6 +21,9 @@ a {
     cursor: pointer!important;
 }
 
+
+/*top navbar extension*/
+
 .navbarNotTop {
     height: 50px;
     animation: navbarNotTopAnimation 0.7s ease-in-out;
@@ -49,32 +52,30 @@ a {
     }
 }
 
+
+/*top navbar extension end*/
+
+
+/*navbar items animation*/
+
 a:hover {
     color: red!important;
     transition: 0.8s;
-    animation: navActiveAnimation 3s ease-in-out infinite;
+    transform: translate(0px, -3px)
 }
 
 a {
-    transition: 2s;
+    transition: 0.2s;
 }
 
 .active {
     color: red!important;
-    animation: navActiveAnimation 3s ease-in-out infinite;
-    transition: 0.3s;
+    transform: translate(0px, -3px);
+    border-bottom: 1px solid wheat;
 }
 
-@keyframes navActiveAnimation {
-    0%,
-    100% {
-        text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.2);
-    }
-    50% {
-        text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2);
-        filter: blur(15%);
-    }
-}
+
+/*navbar items animation end*/
 
 
 /*parallax*/
@@ -168,28 +169,27 @@ img:last-of-type {
 }
 
 #title {
-    background-image: url("assets/bg0.jpg");
+    /*background-image: url("assets/bg0.jpg");*/
+    background-color: rgb(58, 125, 180);
     z-index: 2;
 }
 
-#title h1 {
-    transform: translateZ(.25px) scale(.75);
-    transform-origin: 50% 100%;
-}
-
 #slide1:before {
-    background-image: url("assets/bg01.jpg");
+    /* background-image: url("assets/bg01.jpg");*/
     transform: translateZ(-1px) scale(2);
+    background-color: rgb(154, 180, 58);
 }
 
 #slide2 {
-    background-image: url("assets/bg02.jpg");
+    /*background-image: url("assets/bg02.jpg");*/
+    background-color: rgb(187, 60, 51);
     z-index: 2;
 }
 
 #slide3:before {
-    background-image: url("assets/bg01.jpg");
+    /*background-image: url("assets/bg01.jpg");*/
     transform: translateZ(-1px) scale(2);
+    background-color: rgb(216, 24, 158);
 }
 
 #slide4 {
