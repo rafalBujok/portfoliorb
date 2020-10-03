@@ -7,7 +7,7 @@ import { ScrollserviceService } from '../scrollservice.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit, OnDestroy  {
+export class NavbarComponent implements OnInit, OnDestroy {
   currentSection = 'top';
 
   scrollTo(section) {
@@ -16,14 +16,16 @@ export class NavbarComponent implements OnInit, OnDestroy  {
   }
 
   private subscription: Subscription;
-  constructor( private srv: ScrollserviceService ){  }
+  constructor(private srv: ScrollserviceService) { }
 
   ngOnInit() {
     this.subscription = this.srv.sesionObs$.subscribe((res) => {
       if (res.hasOwnProperty('option') && res.option === 'call_child') {
         this.currentSection = res.value;
+
       }
     });
+
   }
 
   ngOnDestroy() {
