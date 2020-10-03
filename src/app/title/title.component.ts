@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 
+import { start } from '../title/start.js'
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
@@ -7,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TitleComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit(): void {
+    start();
   }
+  constructor() { }
+
+
 
   scrollTo(section) {
     document.querySelector('#' + section)

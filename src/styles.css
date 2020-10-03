@@ -102,7 +102,6 @@ p {
 
 .slide {
     position: relative;
-    padding: 25vh 10%;
     min-height: 100vh;
     width: 100vw;
     box-sizing: border-box;
@@ -138,14 +137,6 @@ img:last-of-type {
     z-index: -1;
 }
 
-.title {
-    width: 50%;
-    padding: 5%;
-    border-radius: 5px;
-    background: rgba(240, 230, 220, .7);
-    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
-}
-
 .slide:nth-child(2n) .title {
     margin-left: 0;
     margin-right: auto;
@@ -169,21 +160,25 @@ img:last-of-type {
 }
 
 #title {
-    /*background-image: url("assets/bg0.jpg");*/
-    background-color: rgb(58, 125, 180);
+    background-image: url("assets/foto1done.jpg");
     z-index: 2;
 }
 
 #slide1:before {
-    /* background-image: url("assets/bg01.jpg");*/
+    /*background-image: url("assets/bg01.jpg");*/
     transform: translateZ(-1px) scale(2);
     background-color: rgb(154, 180, 58);
+}
+
+#slide1 {
+    padding: 25vh 10%;
 }
 
 #slide2 {
     /*background-image: url("assets/bg02.jpg");*/
     background-color: rgb(187, 60, 51);
     z-index: 2;
+    padding: 25vh 10%;
 }
 
 #slide3:before {
@@ -192,9 +187,30 @@ img:last-of-type {
     background-color: rgb(216, 24, 158);
 }
 
+#slide3 {
+    padding: 25vh 10%;
+}
+
 #slide4 {
     background: #222;
+    padding: 25vh 10%;
 }
 
 
 /*parallax end*/
+
+.large-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    z-index: -1;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
