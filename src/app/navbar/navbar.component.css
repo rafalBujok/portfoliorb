@@ -1,0 +1,115 @@
+#navbarSupportedContent {
+    background-attachment: fixed;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+a {
+    cursor: pointer!important;
+}
+
+.navtop {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 5px 10px black;
+}
+
+
+/*top navbar extension*/
+
+.navbarNotTop {
+    height: 70px;
+    animation: navbarNotTopAnimation 0.7s ease-in-out;
+}
+
+@keyframes navbarNotTopAnimation {
+    0% {
+        height: 100px;
+    }
+    100% {
+        height: 70px;
+    }
+}
+
+.navbarTop {
+    animation: navbarTopAnimation 0.7s ease-in-out;
+    height: 100px;
+}
+
+@keyframes navbarTopAnimation {
+    0% {
+        height: 70px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+
+/*top navbar extension end*/
+
+
+/*navbar items animation*/
+
+a:hover {
+    color: teal!important;
+    transition: 0.8s;
+}
+
+a {
+    transition: 0.2s;
+}
+
+.active {
+    color: teal!important;
+    transform: rotateX(90deg);
+    transition: 1s;
+}
+
+.inactive {
+    border-bottom: black 2px solid
+}
+
+
+/*navbar items animation end*/
+
+
+/*navbar cube*/
+
+.scene {
+    perspective: 1000px;
+    position: relative;
+    height: 20px;
+    width: 100px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: 0.8s;
+}
+
+.wall {
+    position: absolute;
+}
+
+div.front {
+    transform: translateZ(10px);
+}
+
+div.bottom {
+    transform: rotateX(-90deg) translateZ(10px);
+}
+
+
+/*navbar cube end*/
+
+.cube:hover {
+    transform: rotateX(90deg);
+    transition: 1s;
+}

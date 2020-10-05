@@ -9,25 +9,58 @@
 
         <ul class="navbar-nav m-auto">
             <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('title')" [class.active]="currentSection === 'title'|| currentSection === 'top'" [class.inactive]="currentSection !== 'title'">Home</a>
-
-            </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide1')" [class.active]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">
-                    <div>O Mnie</div>
+                <a class="nav-link rollOn" (click)="scrollTo('title')">
+                    <div class="scene">
+                        <div class="cube" [class.active]="currentSection === 'title'|| currentSection === 'top'" [class.inactive]="currentSection !== 'title'">
+                            <div class="wall front">Home</div>
+                            <div class="wall bottom"><b>Home</b></div>
+                        </div>
+                    </div>
                 </a>
 
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide2')" [class.active]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">Technologie</a>
+                <a class="nav-link rollOn" (click)="scrollTo('slide1')">
+                    <div class="scene">
+                        <div class="cube" [class.active]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">
+                            <div class="wall front">O mnie</div>
+                            <div class="wall bottom"><b>O mnie</b></div>
+                        </div>
+                    </div>
+                </a>
 
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide3')" [class.active]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">Projekty</a>
+                <a class="nav-link rollOn" (click)="scrollTo('slide2')">
+                    <div class="scene">
+                        <div class="cube" [class.active]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">
+                            <div class="wall front">Technologie</div>
+                            <div class="wall bottom"><b>Technologie</b></div>
+                        </div>
+                    </div>
+                </a>
 
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide4')" [class.active]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">Kontakt</a>
+                <a class="nav-link rollOn" (click)="scrollTo('slide3')">
+                    <div class="scene">
+                        <div class="cube" [class.active]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">
+                            <div class="wall front">Projekty</div>
+                            <div class="wall bottom"><b>Projekty</b></div>
+                        </div>
+                    </div>
+                </a>
+
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link rollOn" (click)="scrollTo('slide4')">
+                    <div class="scene">
+                        <div class="cube" [class.active]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">
+                            <div class="wall front">Kontakt</div>
+                            <div class="wall bottom"><b>Kontakt</b></div>
+                        </div>
+                    </div>
+                </a>
 
             </li>
         </ul>
