@@ -17,9 +17,30 @@
     box-shadow: 0 0 8px rgba(0, 0, 0, 1);
 }
 
+.info-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    z-index: 1;
+}
+
+#can {
+    width: 340px;
+    height: 604px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240, 230, 220, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
 @media screen and (max-width: 576px) {
-    .imgrbFoto {
-        width: 200px;
-        height: auto;
+    #can {
+        width: 170px;
+        height: 302px;
+    }
+    .bgFrame {
+        transform: translateZ(0px);
     }
 }
