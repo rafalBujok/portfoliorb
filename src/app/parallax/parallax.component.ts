@@ -17,7 +17,7 @@ export class ParallaxComponent implements OnInit {
 
   onSectionChange(sectionId: string) {
     this.currenctSection = sectionId;
-    this.srv.notifyOther({ option: 'call_child', value:  this.currenctSection  })
+    this.srv.notifyOther({ option: 'call_child', value: this.currenctSection })
   }
 }
 

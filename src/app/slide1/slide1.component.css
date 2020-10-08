@@ -1,0 +1,25 @@
+.imgrbFoto {
+    position: absolute;
+    width: 320px;
+    height: auto;
+    transform: translateZ(.05px);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240, 230, 220, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+.bgFrame {
+    transform: translateZ(-.2px);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240, 230, 220, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 576px) {
+    .imgrbFoto {
+        width: 200px;
+        height: auto;
+    }
+}
