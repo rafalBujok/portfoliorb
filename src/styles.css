@@ -84,15 +84,8 @@ p {
     background: 50% 50% / cover;
 }
 
-.header {
-    text-align: center;
-    font-size: 175%;
-    color: #fff;
-    text-shadow: 0 2px 2px #000;
-}
-
 #title {
-    background-image: url("assets/foto1done.jpg");
+    background-image: url("assets/bg001.jpg");
     z-index: 2;
 }
 
@@ -131,45 +124,8 @@ p {
 
 /*parallax end*/
 
-
-/*title component*/
-
-.large-header {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-position: center center;
-    z-index: -1;
-}
-
-.center {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-}
-
-.title {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    width: 400px;
-    height: 120px;
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(240, 230, 220, 0.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
-    transform: translateZ(0.2px);
-}
-
-
-/*title component end*/
-
 @media screen and (max-width: 992px) {
     .active {
         border-bottom: none;
-    }
-    .title {
-        left: 0;
     }
 }
