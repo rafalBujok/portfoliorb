@@ -8,7 +8,7 @@ import { ScrollserviceService } from '../scrollservice.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit, OnDestroy {
-  currentSection = 'top';
+  currentSection = 'title';
 
   scrollTo(section) {
     document.querySelector('#' + section)

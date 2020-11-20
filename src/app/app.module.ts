@@ -10,10 +10,12 @@ import { ParallaxComponent } from './parallax/parallax.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TitleComponent } from './title/title.component';
-import { Slide1Component } from './slide1/slide1.component';
+
 import { Slide2Component } from './slide2/slide2.component';
 import { Slide3Component } from './slide3/slide3.component';
 import { Slide4Component } from './slide4/slide4.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Slide1Component } from './slide1/slide1.component';
 
 
 
@@ -35,7 +37,8 @@ import { Slide4Component } from './slide4/slide4.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    FontAwesomeModule
 
   ],
   providers: [],

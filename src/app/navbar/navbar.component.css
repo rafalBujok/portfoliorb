@@ -1,20 +1,14 @@
-#navbarSupportedContent {
-    background-attachment: fixed;
-    background-color: #f7f7f7;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
 a {
     cursor: pointer!important;
 }
 
 .navtop {
-    position: sticky;
-    top: 0;
-    z-index: 10;
     box-shadow: 0px 5px 10px black;
+    width: 100%!important;
+}
+
+#navbarSupportedContent {
+    width: 100%!important;
 }
 
 
@@ -61,6 +55,7 @@ a:hover {
 
 a {
     transition: 0.2s;
+    letter-spacing: 1px;
 }
 
 .active {
@@ -94,6 +89,8 @@ a {
 
 .wall {
     position: absolute;
+    width: 100%;
+    text-align: center;
 }
 
 div.front {
@@ -105,10 +102,16 @@ div.bottom {
     border-bottom: black 2px solid;
 }
 
-
-/*navbar cube end*/
-
 .cube:hover {
     transform: rotateX(90deg);
     transition: 1s;
+}
+
+
+/*navbar cube end*/
+
+@media screen and (max-width: 992px) {
+    .active {
+        border-bottom: none;
+    }
 }

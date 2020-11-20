@@ -25,10 +25,9 @@ export class ScrollSpyDirective {
       }
     }
     if (currentSection !== this.currentSection) {
+
       this.currentSection = currentSection;
-      if (this.currentSection === undefined) {
-        this.currentSection = 'top'
-      }
+
       this.sectionChange.emit(this.currentSection);
 
     }
