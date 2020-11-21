@@ -1,25 +1,14 @@
-<div class="">
-    <h1>Technologie</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm m-2 p-2">HTML5</div>
-            <div class="col-sm m-2 p-2">CSS3</div>
-            <div class="col-sm m-2 p-2">Bootstrap</div>
-            <div class="col-sm m-2 p-2">Photoshop/Gimp</div>
-        </div>
-        <div class="row">
-            <div class="col-sm m-2 p-2">GIT</div>
-            <div class="col-sm m-2 p-2">Angular</div>
-            <div class="col-sm m-2 p-2">TypeScript</div>
-            <div class="col-sm m-2 p-2">JavaScript</div>
+<h1 class="text-center text-name">
+    Technologie</h1>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4   item" *ngFor="let tech of technology">
+
+
+            <app-technology-display [tech]="tech"></app-technology-display>
+
         </div>
     </div>
-
-</div>
-<div *ngFor="let tech of technology">
-    <div>{{tech[0]}}
-        <img class="icon" [src]="tech[1]">
-
-    </div>
-
 </div>

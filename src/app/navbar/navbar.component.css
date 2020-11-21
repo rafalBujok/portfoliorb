@@ -9,6 +9,8 @@ a {
 
 #navbarSupportedContent {
     width: 100%!important;
+    background-color: #f8f9fa8c;
+    border-radius: 10px 10px 10px 10px;
 }
 
 

@@ -34,8 +34,9 @@
 }
 
 #slide2 {
-    /*background-image: url("assets/bg02.jpg");*/
-    background-color: rgb(187, 60, 51);
+    padding-top: 10%;
+    ;
+    background-color: rgb(150, 145, 144);
     z-index: 2;
 }
 

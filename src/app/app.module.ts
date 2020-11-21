@@ -16,6 +16,7 @@ import { Slide3Component } from './slide3/slide3.component';
 import { Slide4Component } from './slide4/slide4.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Slide1Component } from './slide1/slide1.component';
+import { TechnologyDisplayComponent } from './slide2/technology-display/technology-display.component';
 
 
 
@@ -30,6 +31,7 @@ import { Slide1Component } from './slide1/slide1.component';
     Slide2Component,
     Slide3Component,
     Slide4Component,
+    TechnologyDisplayComponent,
 
   ],
   imports: [
