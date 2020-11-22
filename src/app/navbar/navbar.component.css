@@ -19,6 +19,7 @@ a {
 .navbarNotTop {
     height: 70px;
     animation: navbarNotTopAnimation 0.7s ease-in-out;
+    opacity: 1;
 }
 
 @keyframes navbarNotTopAnimation {
@@ -33,6 +34,7 @@ a {
 .navbarTop {
     animation: navbarTopAnimation 0.7s ease-in-out;
     height: 100px;
+    opacity: 0.85;
 }
 
 @keyframes navbarTopAnimation {

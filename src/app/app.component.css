@@ -8,6 +8,7 @@
 .parallax {
     top: 0;
     position: absolute;
+    width: 100%;
 }
 
 .wave {

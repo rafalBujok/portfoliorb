@@ -1,6 +1,7 @@
 /*title component*/
 
-.large-header {
+
+/* .large-header {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -21,6 +22,12 @@
     box-shadow: 0 0 8px rgba(247, 247, 247, 0.507);
     transform: translateZ(0.3px);
     color: rgba(17, 16, 16, 0.925);
+} */
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 

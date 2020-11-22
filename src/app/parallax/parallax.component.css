@@ -13,7 +13,7 @@
 }
 
 #title {
-    background-image: url("/assets/bg001.jpg");
+    background-color: black;
     z-index: 2;
 }
 
@@ -30,13 +30,13 @@
 #slide1:before {
     /*background-image: url("assets/bg01.jpg");*/
     transform: translateZ(-1px) scale(2);
-    background-color: rgb(235, 236, 232);
+    background-color: rgb(73, 190, 206);
 }
 
 #slide2 {
     padding-top: 10%;
     ;
-    background-color: rgb(150, 145, 144);
+    background-color: rgb(64, 167, 141);
     z-index: 2;
 }
 
@@ -50,4 +50,8 @@
 
 #slide4 {
     background: #222;
+}
+
+body {
+    width: 100%;
 }

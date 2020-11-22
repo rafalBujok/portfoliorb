@@ -1,6 +1,6 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { start } from '../title/start.js'
+import { start } from '../title/matrix.js'
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
