@@ -18,5 +18,22 @@
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 18px;
-        ;
+    }
+
+    @media screen and (max-width:375px) {
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+        .icon:hover {
+            transition: .3s;
+            width: 48px;
+            height: 48px;
+        }
+        .img-container {
+            height: 48px;
+        }
+        p {
+            font-size: 16px;
+        }
     }

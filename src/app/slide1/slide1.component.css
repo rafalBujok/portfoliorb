@@ -55,3 +55,15 @@
         transform: translateZ(0px);
     }
 }
+
+@media screen and (max-width:425px) {
+    .bgFrame {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .bgFrame img {
+        width: 300px;
+    }
+}

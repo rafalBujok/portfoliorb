@@ -17,6 +17,9 @@ import { Slide4Component } from './slide4/slide4.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Slide1Component } from './slide1/slide1.component';
 import { TechnologyDisplayComponent } from './slide2/technology-display/technology-display.component';
+import { ProjektyDisplayComponent } from './slide3/projekty-display/projekty-display.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -32,6 +35,7 @@ import { TechnologyDisplayComponent } from './slide2/technology-display/technolo
     Slide3Component,
     Slide4Component,
     TechnologyDisplayComponent,
+    ProjektyDisplayComponent,
 
   ],
   imports: [
@@ -40,7 +44,9 @@ import { TechnologyDisplayComponent } from './slide2/technology-display/technolo
     BrowserAnimationsModule,
     NgbModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatTabsModule,
+    MatCardModule
 
   ],
   providers: [],

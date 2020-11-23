@@ -38,3 +38,27 @@
     width: 100%;
     float: right;
 }
+
+@media screen and (max-width:425px) {
+    .bgFrame {
+        display: none;
+    }
+}
+
+@media screen and (max-height:748px) {
+    .wave {
+        display: none;
+    }
+    .wave2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .wave {
+        display: none;
+    }
+    .wave2 {
+        display: none;
+    }
+}

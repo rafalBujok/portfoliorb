@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollserviceService } from '../scrollservice.service';
-
+import AOS from 'aos';
 @Component({
   selector: 'app-parallax',
   templateUrl: './parallax.component.html',
@@ -11,6 +11,7 @@ export class ParallaxComponent implements OnInit {
   constructor(private srv: ScrollserviceService) {
   }
   ngOnInit(): void {
+    AOS.init();
 
   }
   currenctSection: string;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-slide2',
   templateUrl: './slide2.component.html',
@@ -21,6 +22,7 @@ export class Slide2Component implements OnInit {
   ]
 
   ngOnInit(): void {
+
   }
 
 }

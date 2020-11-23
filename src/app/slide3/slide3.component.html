@@ -1,4 +1,9 @@
-<div class="">
-    <h1>Projekty</h1>
-    <p>galeria projektow</p>
-</div>
+<h1 class="text-center text-name">
+    Projekty</h1>
+<mat-tab-group mat-align-tabs="center">
+    <div *ngFor="let project of project">
+        <mat-tab label="{{project[0]}}" class="content text-center">
+            <app-projekty-display [project]="project"></app-projekty-display>
+        </mat-tab>
+    </div>
+</mat-tab-group>

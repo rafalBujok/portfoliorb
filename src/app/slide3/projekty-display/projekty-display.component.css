@@ -1,0 +1,19 @@
+.card-image {
+    width: 50%;
+    display: block;
+}
+
+.card {
+    width: 100%;
+    align-content: center;
+    border: none;
+}
+
+.card-subtitle {}
+
+.card-header {
+    background-color: transparent;
+    align-content: center;
+    margin-left: 10%;
+    border: none;
+}
