@@ -30,5 +30,22 @@ canvas {
     left: 0;
 }
 
+#can1 {
+    z-index: 0;
+}
+
+#can2 {
+    opacity: 70%;
+    z-index: 1;
+    left: 30%;
+    top: 30%;
+}
+
 
 /*title component end*/
+
+@media screen and (max-width: 992px) {
+    #can2 {
+        left: 10%;
+    }
+}

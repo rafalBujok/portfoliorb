@@ -33,10 +33,14 @@
     background-color: rgb(73, 190, 206);
 }
 
+#slide1 {
+    background-color: rgb(108, 110, 112);
+}
+
 #slide2 {
     padding-top: 10%;
     ;
-    background-color: rgb(64, 167, 141);
+    background-color: rgb(78, 83, 82);
     z-index: 2;
 }
 

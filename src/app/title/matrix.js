@@ -1,5 +1,5 @@
 exports.start = function start() {
-    var can = document.getElementById("can");
+    var can = document.getElementById("can1");
     var ctx = can.getContext("2d");
 
     //making the canvas full screen
@@ -7,8 +7,8 @@ exports.start = function start() {
     can.width = window.innerWidth;
 
     //chinese characters - taken from the unicode charset
-    var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
-    //converting the string into an array of single characters
+    var matrix = "FRONT" // "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+        //converting the string into an array of single characters
     matrix = matrix.split("");
 
     var font_size = 10;
@@ -20,8 +20,6 @@ exports.start = function start() {
     for (var x = 0; x < columns; x++)
         drops[x] = 100;
     var oldText = [];
-
-
 
     //drawing the characters
     function draw() {
@@ -41,15 +39,26 @@ exports.start = function start() {
             //x = i*font_size, y = value of drops[i]*font_size
 
             if (oldText[i]) {
-                ctx.fillStyle = "#0ff"; //green text
+                ctx.fillStyle = "#0ff"; //blue text
                 ctx.fillText(oldText[i], i * font_size, (drops[i] * font_size) - font_size);
 
             }
-            if (speed>40){
+            if (speed > 40) {
                 ctx.fillStyle = "#fff"; //white text
                 ctx.fillText(text, i * font_size, drops[i] * font_size);
                 oldText[i] = text;
-
+            }
+            //check if 5 last elements
+            if (oldText[i - 1] === 'F' && oldText[i - 2] === 'R' && oldText[i - 3] === 'O' && oldText[i - 4] === 'N' && oldText[i - 5] === 'T') {
+                ctx.fillStyle = "rgba(0, 0, 0, 1"; // black bg
+                ctx.fillRect(i * font_size, ((drops[i] * font_size) - 5 * font_size), font_size, font_size * 5);
+                ctx.fillStyle = "#fff"; //white text
+                //write FRONT
+                ctx.fillText('F', i * font_size, ((drops[i] * font_size) - 5 * font_size));
+                ctx.fillText('R', i * font_size, ((drops[i] * font_size) - 4 * font_size));
+                ctx.fillText('O', i * font_size, ((drops[i] * font_size) - 3 * font_size));
+                ctx.fillText('N', i * font_size, ((drops[i] * font_size) - 2 * font_size));
+                ctx.fillText('T', i * font_size, ((drops[i] * font_size) - 1 * font_size));
             }
 
 
@@ -59,11 +68,11 @@ exports.start = function start() {
                 drops[i] = 0;
 
             //incrementing Y coordinate
-if (speed>40){
-            drops[i]++;
-}
+            if (speed > 40) {
+                drops[i]++;
+            }
         }
     }
 
-    setInterval(draw, 40);
+    setInterval(draw, 30);
 }

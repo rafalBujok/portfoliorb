@@ -9,7 +9,7 @@ a {
 
 #navbarSupportedContent {
     width: 100%!important;
-    background-color: #f8f9fa8c;
+    background-color: #f8f9fa;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -117,5 +117,8 @@ div.bottom {
 @media screen and (max-width: 992px) {
     .active {
         border-bottom: none;
+    }
+    .navbarTop {
+        opacity: 1;
     }
 }
