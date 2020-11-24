@@ -8,6 +8,7 @@ canvas {
 
 #can1 {
     z-index: 0;
+    width: 100%;
 }
 
 #can2 {
@@ -20,22 +21,9 @@ canvas {
 
 /*title component end*/
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 425px) {
     #can2 {
+        width: 70%;
         left: 10%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    #can2 {
-        left: 0%;
-        width: 375px
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #can2 {
-        left: 0%;
-        width: 320px
     }
 }

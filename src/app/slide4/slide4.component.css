@@ -11,3 +11,8 @@ p {
     font-size: medium;
     color: aliceblue;
 }
+
+.text-name {
+    font-size: 350%;
+    padding: 50px;
+}

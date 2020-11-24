@@ -5,7 +5,7 @@ a {
 .navtop {
     box-shadow: 0px 5px 10px black;
     width: 100%!important;
-    position: fixed;
+    position: fixed!important;
 }
 
 #navbarSupportedContent {

@@ -1,69 +1,18 @@
-.imgrbFoto {
-    position: absolute;
-    width: 320px;
-    height: auto;
-    transform: translateZ(.05px);
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(240, 230, 220, 0.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+.image-me {
+    width: 400px;
+    border-radius: 3%;
+    border: solid black 2px;
+    box-shadow: 0 8px 16px 0 rgb(102, 91, 101), 0 12px 40px 0 rgb(0, 0, 0);
+    text-align: center;
+    display: block;
 }
 
-.bgFrame {
-    transform: translateZ(-.2px);
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(240, 230, 220, 0.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+.text-name {
+    font-size: 350%;
+    padding: 50px;
 }
 
-.info-header {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-position: center center;
-    z-index: 1;
-}
-
-#can {
-    width: 340px;
-    height: 604px;
-    position: absolute;
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(240, 230, 220, 0.1);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
-}
-
-.about-text {
-    text-align: left;
-    font-size: 16px;
-    line-height: 160%;
-    border-bottom: 2px solid black;
-}
-
-.slide-content {
-    padding-top: 10%;
-}
-
-@media screen and (max-width: 576px) {
-    #can {
-        width: 170px;
-        height: 302px;
-    }
-    .bgFrame {
-        transform: translateZ(0px);
-    }
-}
-
-@media screen and (max-width:425px) {
-    .bgFrame {
-        display: none;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .bgFrame img {
-        width: 300px;
-    }
+.text-content {
+    font-size: 18px;
+    color: cornsilk;
 }
