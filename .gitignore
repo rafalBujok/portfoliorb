@@ -2,6 +2,7 @@
 
 # assets
 /src/assets
+/public
 
 # compiled output
 /dist

@@ -11,31 +11,3 @@
     width: 100%;
     overflow-x: hidden;
 }
-
-.wave {
-    height: 500%;
-    width: 10%;
-    position: absolute;
-    z-index: 3;
-    opacity: 50%;
-}
-
-.wave2 {
-    height: 500%;
-    width: 10%;
-    right: 0;
-    position: absolute;
-    z-index: 3;
-    opacity: 50%;
-}
-
-.wave-content {
-    height: 100%;
-    width: 100%;
-}
-
-.wave-content2 {
-    height: 100%;
-    width: 100%;
-    float: right;
-}

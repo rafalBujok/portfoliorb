@@ -1,5 +1,5 @@
 .card-image {
-    width: 50%;
+    width: 60%;
     display: block;
 }
 
@@ -17,4 +17,32 @@
     align-content: center;
     margin-left: 10%;
     border: none;
+}
+
+.text-name {
+    font-size: 350%;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+.text-content {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .card-image {
+        width: 100%;
+    }
+    .card-header {
+        width: 95%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .card-title {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        padding: 0px;
+    }
 }

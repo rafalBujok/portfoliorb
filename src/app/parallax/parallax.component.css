@@ -20,6 +20,8 @@
 #title {
     background-color: black;
     z-index: 2;
+    padding-top: 0;
+    ;
 }
 
 .slide:before {
@@ -56,9 +58,15 @@
 }
 
 #slide4 {
-    background: #c6b497;
+    background: #5f7275;
 }
 
 body {
     width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+    .slide {
+        padding-top: 55px;
+    }
 }

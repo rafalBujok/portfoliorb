@@ -6,7 +6,7 @@ exports.start2 = function start2() {
     can.height = 80;
     can.width = 400;
     //letters pool
-    var matrix = "RAFAŁ_BUJOK_FRONTEND_DEVELOPER_"
+    var matrix = "RAFAŁ_BUJOK_FRONTEND_DEVELOPER_   "
     matrix = matrix.split("");
     var font_size = 20;
     //text to show

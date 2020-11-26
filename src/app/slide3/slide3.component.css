@@ -1,4 +1,46 @@
 .text-name {
     font-size: 350%;
     padding: 50px;
+    letter-spacing: 3px;
+    ;
+}
+
+.text-name::before {
+    content: '[ ';
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.text-name::after {
+    content: ' ]';
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.text-content {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+
+@media screen and (max-width: 320px) {
+    .text-name {
+        font-size: 300%;
+        padding: 40px;
+        letter-spacing: 2px;
+    }
 }
