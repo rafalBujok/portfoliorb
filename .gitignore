@@ -2,9 +2,10 @@
 
 # assets
 /src/assets
-/public
+
 
 # compiled output
+/public
 /dist
 /tmp
 /out-tsc

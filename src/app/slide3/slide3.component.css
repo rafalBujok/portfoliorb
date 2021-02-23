@@ -37,10 +37,10 @@
     line-height: 30px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .text-name {
-        font-size: 300%;
-        padding: 40px;
-        letter-spacing: 2px;
+        font-size: 250%;
+        padding: 20px;
+        letter-spacing: 1px;
     }
 }

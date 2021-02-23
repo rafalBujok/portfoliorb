@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class Slide3Component implements OnInit {
 
   project = [
-    ['Radogost', 'Strona zespołu Radogost, połączona z bazą danych firebase, możliwośc dodawania koncertów po zalogowaniu.', 'https://radogostbandpl.firebaseapp.com/home', 'https://github.com/Grolmorth/radogost', 'assets/radogostpage.png'],
+    ['DogShop', 'Projekt sklepu internetowego z zarządzaniem', 'https://dogshop-7ef9d.web.app/', 'https://github.com/Grolmorth/dogShop', 'assets/dogShop.png'],
+
     ['Generator postaci do Warhammera', 'Strona ze sporą biblioteką dotyczącą gry fabularnej Warhammer, za pomocą strony można tworzyć karty postaci, rozwijać je i zapisywać w bazie danych Firebase', 'https://mojagraaa.web.app/bohater', 'https://github.com/Grolmorth/warhammer-char-gen-2-ed', 'assets/warhammer.jpg'],
-    ['Radogost', 'cos o stronie dalej'],
-    ['Radogost', 'cos o stronie dalej'],
+    ['Radogost', 'Strona zespołu Radogost, połączona z bazą danych firebase, możliwośc dodawania koncertów po zalogowaniu.', 'https://radogostbandpl.firebaseapp.com/home', 'https://github.com/Grolmorth/radogost', 'assets/radogostpage.png'],
+
   ]
   constructor() { }
 

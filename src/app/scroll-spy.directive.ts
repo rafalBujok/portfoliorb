@@ -19,16 +19,13 @@ export class ScrollSpyDirective {
     for (let i = 0; i < children.length; i++) {
       const element = children[i];
       if (this.spiedTags.some(spiedTag => spiedTag === element.tagName)) {
-        if ((element.offsetTop - parentOffset) <= scrollTop) {
+        if ((element.offsetTop - parentOffset - 120) <= scrollTop) {
           currentSection = element.id;
         }
       }
     }
     if (currentSection !== this.currentSection) {
-
-
       this.currentSection = currentSection;
-
       this.sectionChange.emit(this.currentSection);
 
     }

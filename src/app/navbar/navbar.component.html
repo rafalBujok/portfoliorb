@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navtop" data-spy="affix" [class.navbarNotTop]="currentSection !== 'title'" [class.navbarTop]="currentSection === 'title'">
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
         <ul class="navbar-nav m-auto ">
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn " (click)="scrollTo('title')">
+            <li class="nav-item m-auto">
+                <a class="nav-link" (click)="scrollTo('title')">
                     <div class="scene ">
-                        <div class="cube " [class.active]="currentSection === 'title'" [class.inactive]="currentSection !== 'title'">
+                        <div class="cube " [class.current]="currentSection === 'title'" [class.inactive]="currentSection !== 'title'">
                             <div class="wall front ">Home</div>
                             <div class="wall bottom"><b>Home</b></div>
                         </div>
@@ -19,10 +19,10 @@
                 </a>
 
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide1')">
+            <li class="nav-item m-auto">
+                <a class="nav-link" (click)="scrollTo('slide1')">
                     <div class="scene">
-                        <div class="cube" [class.active]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">
+                        <div class="cube" [class.current]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">
                             <div class="wall front">O mnie</div>
                             <div class="wall bottom"><b>O mnie</b></div>
                         </div>
@@ -30,10 +30,10 @@
                 </a>
 
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide2')">
+            <li class="nav-item m-auto">
+                <a class="nav-link" (click)="scrollTo('slide2')">
                     <div class="scene">
-                        <div class="cube" [class.active]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">
+                        <div class="cube" [class.current]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">
                             <div class="wall front">Technologie</div>
                             <div class="wall bottom"><b>Technologie</b></div>
                         </div>
@@ -41,10 +41,10 @@
                 </a>
 
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide3')">
+            <li class="nav-item m-auto">
+                <a class="nav-link" (click)="scrollTo('slide3')">
                     <div class="scene">
-                        <div class="cube" [class.active]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">
+                        <div class="cube" [class.current]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">
                             <div class="wall front">Projekty</div>
                             <div class="wall bottom"><b>Projekty</b></div>
                         </div>
@@ -52,10 +52,10 @@
                 </a>
 
             </li>
-            <li class="nav-item mx-3">
-                <a class="nav-link rollOn" (click)="scrollTo('slide4')">
+            <li class="nav-item m-auto">
+                <a class="nav-link" (click)="scrollTo('slide4')">
                     <div class="scene">
-                        <div class="cube" [class.active]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">
+                        <div class="cube" [class.current]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">
                             <div class="wall front">Kontakt</div>
                             <div class="wall bottom"><b>Kontakt</b></div>
                         </div>

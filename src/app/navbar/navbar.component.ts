@@ -22,7 +22,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.subscription = this.srv.sesionObs$.subscribe((res) => {
       if (res.hasOwnProperty('option') && res.option === 'call_child') {
         this.currentSection = res.value;
-
       }
     });
 

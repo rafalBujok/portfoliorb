@@ -3,7 +3,7 @@ exports.start = function start() {
     var ctx = can.getContext("2d");
 
     //making the canvas full screen
-    can.height = window.innerHeight;
+    can.height = window.innerHeight + 20;
     can.width = window.innerWidth;
 
     //chinese characters - taken from the unicode charset
@@ -64,21 +64,21 @@ exports.start = function start() {
                 ctx.fillText('N', i * font_size, ((drops[i] * font_size) - 2 * font_size));
                 ctx.fillText('D', i * font_size, ((drops[i] * font_size) - 1 * font_size));
             }
-            if (oldText[i - 1] === 'A' && oldText[i - 2] === ' ' && Math.random() > 0.7) {
-                ctx.fillStyle = "rgba(0, 0, 0, 1"; // black bg
-                ctx.fillRect(i * font_size, ((drops[i] * font_size) - 10 * font_size), font_size, font_size * 10);
-                ctx.fillStyle = "#fff"; //white text
-                //write *****_***
-                ctx.fillText('J', i * font_size, ((drops[i] * font_size) - 9 * font_size));
-                ctx.fillText('E', i * font_size, ((drops[i] * font_size) - 8 * font_size));
-                ctx.fillText('B', i * font_size, ((drops[i] * font_size) - 7 * font_size));
-                ctx.fillText('A', i * font_size, ((drops[i] * font_size) - 6 * font_size));
-                ctx.fillText('Ć', i * font_size, ((drops[i] * font_size) - 5 * font_size));
-                ctx.fillText(' ', i * font_size, ((drops[i] * font_size) - 4 * font_size));
-                ctx.fillText('P', i * font_size, ((drops[i] * font_size) - 3 * font_size));
-                ctx.fillText('I', i * font_size, ((drops[i] * font_size) - 2 * font_size));
-                ctx.fillText('S', i * font_size, ((drops[i] * font_size) - 1 * font_size));
-            }
+            // if (oldText[i - 1] === 'A' && oldText[i - 2] === ' ' && Math.random() > 0.7) {
+            //     ctx.fillStyle = "rgba(0, 0, 0, 1"; // black bg
+            //     ctx.fillRect(i * font_size, ((drops[i] * font_size) - 10 * font_size), font_size, font_size * 10);
+            //     ctx.fillStyle = "#fff"; //white text
+            //     //write *****_***
+            //     ctx.fillText('J', i * font_size, ((drops[i] * font_size) - 9 * font_size));
+            //     ctx.fillText('E', i * font_size, ((drops[i] * font_size) - 8 * font_size));
+            //     ctx.fillText('B', i * font_size, ((drops[i] * font_size) - 7 * font_size));
+            //     ctx.fillText('A', i * font_size, ((drops[i] * font_size) - 6 * font_size));
+            //     ctx.fillText('Ć', i * font_size, ((drops[i] * font_size) - 5 * font_size));
+            //     ctx.fillText(' ', i * font_size, ((drops[i] * font_size) - 4 * font_size));
+            //     ctx.fillText('P', i * font_size, ((drops[i] * font_size) - 3 * font_size));
+            //     ctx.fillText('I', i * font_size, ((drops[i] * font_size) - 2 * font_size));
+            //     ctx.fillText('S', i * font_size, ((drops[i] * font_size) - 1 * font_size));
+            // }
 
 
 

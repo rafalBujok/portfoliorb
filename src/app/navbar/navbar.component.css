@@ -1,15 +1,15 @@
 a {
-    cursor: pointer!important;
+    cursor: pointer !important;
 }
 
 .navtop {
     box-shadow: 0px 5px 10px black;
-    width: 100%!important;
-    position: fixed!important;
+    width: 100% !important;
+    position: fixed !important;
 }
 
-#navbarSupportedContent {
-    width: 100%!important;
+#navbarNavDropdown {
+    width: 100% !important;
     background-color: #f8f9fa;
     border-radius: 10px 10px 10px 10px;
 }
@@ -26,9 +26,11 @@ a {
 @keyframes navbarNotTopAnimation {
     0% {
         height: 100px;
+        opacity: 0.85;
     }
     100% {
         height: 70px;
+        opacity: 1;
     }
 }
 
@@ -41,9 +43,11 @@ a {
 @keyframes navbarTopAnimation {
     0% {
         height: 70px;
+        opacity: 1;
     }
     100% {
         height: 100px;
+        opacity: 0.85;
     }
 }
 
@@ -53,18 +57,13 @@ a {
 
 /*navbar items animation*/
 
-a:hover {
-    color: teal!important;
-    transition: 0.8s;
-}
-
 a {
     transition: 0.2s;
     letter-spacing: 1px;
 }
 
-.active {
-    color: teal!important;
+.current {
+    color: teal !important;
     transform: rotateX(90deg);
     transition: 1s;
 }
@@ -107,19 +106,16 @@ div.bottom {
     border-bottom: black 2px solid;
 }
 
-.cube:hover {
-    transform: rotateX(90deg);
-    transition: 1s;
-}
-
 
 /*navbar cube end*/
 
-@media screen and (max-width: 992px) {
-    .active {
-        border-bottom: none;
+@media screen and (min-width: 992px) {
+    a:hover {
+        color: teal !important;
+        transition: 0.8s;
     }
-    .navbarTop {
-        opacity: 1;
+    .cube:hover {
+        transform: rotateX(90deg);
+        transition: 1s;
     }
 }

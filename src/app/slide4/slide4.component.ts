@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class Slide4Component implements OnInit {
 
   constructor() { }
-
+  today = new Date;
+  year: number;
   ngOnInit(): void {
+    this.year = this.today.getFullYear()
   }
 
 }
