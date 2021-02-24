@@ -3,7 +3,7 @@ exports.start = function start() {
     var ctx = can.getContext("2d");
 
     //making the canvas full screen
-    can.height = window.innerHeight + 20;
+    can.height = window.innerHeight + 40;
     can.width = window.innerWidth;
 
     //chinese characters - taken from the unicode charset

@@ -11,7 +11,7 @@ export class ProjektyDisplayComponent implements OnInit {
   @Input() project: any;
   ngOnInit(): void {
   }
-  openPage(link) {
+  openPage(link: string) {
     window.open(link);
   }
 }

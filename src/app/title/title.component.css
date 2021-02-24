@@ -12,7 +12,7 @@ canvas {
 }
 
 #can2 {
-    opacity: 70%;
+    opacity: 70%!important;
     z-index: 1;
     left: 30%;
     top: 30%;
