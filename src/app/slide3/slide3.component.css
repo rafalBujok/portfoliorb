@@ -2,7 +2,7 @@
     font-size: 350%;
     padding: 50px;
     letter-spacing: 3px;
-    ;
+    font-family: 'Varela', sans-serif;
 }
 
 .text-name::before {
