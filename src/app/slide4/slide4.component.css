@@ -14,7 +14,7 @@ p {
 }
 
 .text-name {
-    font-size: 350%;
+    font-size: 330%;
     padding: 50px;
     letter-spacing: 3px;
     font-family: 'Varela', sans-serif;
@@ -59,11 +59,10 @@ p {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .text-name {
         font-size: 300%;
-        padding: 40px;
-        letter-spacing: 3px;
-        ;
+        padding: 20px;
+        letter-spacing: 2px;
     }
 }

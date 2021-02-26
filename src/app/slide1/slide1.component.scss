@@ -76,6 +76,7 @@ body {
     overflow: hidden;
     &__image {
         position: relative;
+        clip-path: polygon(6% 41%, 26% 35%, 15% 0%, 60% 15%, 82% 9%, 79% 46%, 96% 70%, 84% 86%, 68% 92%, 46% 75%, 16% 100%, 20% 66%);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -117,6 +118,7 @@ body {
             transition-delay: .15s;
         }
         &:hover {
+            clip-path: none;
             border-radius: 0;
             width: 400px;
             height: 600px;

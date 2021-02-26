@@ -38,25 +38,24 @@
 }
 
 #slide1 {
-    background-color: #34626c;
+    background-image: url("/../../assets/bg.jpg");
 }
 
 #slide2 {
-    background-color: #839b97;
+    background-image: url("/../../assets/bg2.jpg");
     z-index: 2;
 }
 
 #slide3:before {
     transform: translateZ(-1px) scale(2);
-    background-color: rgb(216, 24, 158);
 }
 
 #slide3 {
-    background-color: #cfd3ce;
+    background-image: url("/../../assets/bg3.jpg");
 }
 
 #slide4 {
-    background: #5f7275;
+    background-image: url("/../../assets/bg4.jpg");
 }
 
 body {
