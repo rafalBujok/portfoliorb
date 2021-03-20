@@ -24,6 +24,11 @@ a {
     opacity: 1;
 }
 
+.languages {
+    position: absolute;
+    right: 0;
+}
+
 @keyframes navbarNotTopAnimation {
     0% {
         height: 100px;

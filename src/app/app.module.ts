@@ -15,8 +15,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Slide1Component } from './slide1/slide1.component';
 import { TechnologyDisplayComponent } from './slide2/technology-display/technology-display.component';
 import { ProjektyDisplayComponent } from './slide3/projekty-display/projekty-display.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+export const createTranslateLoader = (http: HttpClient) => {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 
 
@@ -37,12 +43,20 @@ import {MatCardModule} from '@angular/material/card';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgbModule,
     MatButtonModule,
     FontAwesomeModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
 
   ],
   providers: [],

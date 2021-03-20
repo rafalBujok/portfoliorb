@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { ScrollserviceService } from '../scrollservice.service';
 
@@ -16,7 +17,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   private subscription: Subscription;
-  constructor(private srv: ScrollserviceService) { }
+  constructor(private srv: ScrollserviceService, public translate: TranslateService) { }
 
   ngOnInit() {
     this.subscription = this.srv.sesionObs$.subscribe((res) => {
