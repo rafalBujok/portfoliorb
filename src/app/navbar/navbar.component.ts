@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 import { ScrollService } from '../services/scroll.service';
@@ -10,6 +10,10 @@ import { ScrollService } from '../services/scroll.service';
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   currentSection = 'title';
+  currentLanguage = 'en';
+
+  @Output() language = new EventEmitter<string>();
+
 
   scrollTo(section) {
     document.querySelector('#' + section)
@@ -26,6 +30,10 @@ export class NavbarComponent implements OnInit, OnDestroy {
       }
     });
 
+  }
+  changeLanguage(language: string): void {
+    this.language.emit(language);
+    this.currentLanguage = language;
   }
 
   ngOnDestroy() {

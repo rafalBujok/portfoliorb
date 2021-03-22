@@ -12,8 +12,8 @@
                 <a class="nav-link" (click)="scrollTo('title')">
                     <div class="scene ">
                         <div class="cube " [class.current]="currentSection === 'title'" [class.inactive]="currentSection !== 'title'">
-                            <div class="wall front ">Home</div>
-                            <div class="wall bottom"><b>Home</b></div>
+                            <div class="wall front ">{{'nav.home'|translate|titlecase}}</div>
+                            <div class="wall bottom"><b>{{'nav.home'|translate|titlecase}}</b></div>
                         </div>
                     </div>
                 </a>
@@ -23,8 +23,8 @@
                 <a class="nav-link" (click)="scrollTo('slide1')">
                     <div class="scene">
                         <div class="cube" [class.current]="currentSection === 'slide1'" [class.inactive]="currentSection !== 'slide1'">
-                            <div class="wall front">O mnie</div>
-                            <div class="wall bottom"><b>O mnie</b></div>
+                            <div class="wall front">{{'nav.about'|translate|titlecase}}</div>
+                            <div class="wall bottom"><b>{{'nav.about'|translate|titlecase}}</b></div>
                         </div>
                     </div>
                 </a>
@@ -34,8 +34,8 @@
                 <a class="nav-link" (click)="scrollTo('slide2')">
                     <div class="scene">
                         <div class="cube" [class.current]="currentSection === 'slide2'" [class.inactive]="currentSection !== 'slide2'">
-                            <div class="wall front">Technologie</div>
-                            <div class="wall bottom"><b>Technologie</b></div>
+                            <div class="wall front">{{'nav.technology'|translate|titlecase}}</div>
+                            <div class="wall bottom"><b>{{'nav.technology'|translate|titlecase}}</b></div>
                         </div>
                     </div>
                 </a>
@@ -45,8 +45,8 @@
                 <a class="nav-link" (click)="scrollTo('slide3')">
                     <div class="scene">
                         <div class="cube" [class.current]="currentSection === 'slide3'" [class.inactive]="currentSection !== 'slide3'">
-                            <div class="wall front">Projekty</div>
-                            <div class="wall bottom"><b>Projekty</b></div>
+                            <div class="wall front">{{'nav.projects'|translate|titlecase}}</div>
+                            <div class="wall bottom"><b>{{'nav.projects'|translate|titlecase}}</b></div>
                         </div>
                     </div>
                 </a>
@@ -56,8 +56,8 @@
                 <a class="nav-link" (click)="scrollTo('slide4')">
                     <div class="scene">
                         <div class="cube" [class.current]="currentSection === 'slide4'" [class.inactive]="currentSection !== 'slide4'">
-                            <div class="wall front">Kontakt</div>
-                            <div class="wall bottom"><b>Kontakt</b></div>
+                            <div class="wall front">{{'nav.contact'|translate|titlecase}}</div>
+                            <div class="wall bottom"><b>{{'nav.contact'|translate|titlecase}}</b></div>
                         </div>
                     </div>
                 </a>
@@ -65,9 +65,9 @@
         </ul>
         <div class="languages">
             <div class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" (click)="changeLanguage('pl')">
                     <div class="scene">
-                        <div class="cube">
+                        <div class="cube" [class.current]="currentLanguage === 'pl'" [class.inactive]="currentSection !== 'pl'">
                             <div class="wall front">Pol</div>
                             <div class="wall bottom"><b>Pol</b></div>
                         </div>
@@ -75,9 +75,9 @@
                 </a>
             </div>
             <div class="nav-item ">
-                <a class="nav-link">
+                <a class="nav-link" (click)="changeLanguage('en')">
                     <div class="scene">
-                        <div class="cube">
+                        <div class="cube" [class.current]="currentLanguage === 'en'" [class.inactive]="currentSection !== 'en'">
                             <div class="wall front">Eng</div>
                             <div class="wall bottom"><b>Eng</b></div>
                         </div>
