@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+
 import { Subscription } from 'rxjs';
-import { ScrollserviceService } from '../scrollservice.service';
+import { ScrollService } from '../services/scroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,11 +16,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
       .scrollIntoView({ behavior: "smooth" });
   }
 
-  private subscription: Subscription;
-  constructor(private srv: ScrollserviceService, public translate: TranslateService) { }
+  private scrollSub: Subscription;
+  constructor(private srv: ScrollService) { }
 
   ngOnInit() {
-    this.subscription = this.srv.sesionObs$.subscribe((res) => {
+    this.scrollSub = this.srv.sesionObs$.subscribe((res) => {
       if (res.hasOwnProperty('option') && res.option === 'call_child') {
         this.currentSection = res.value;
       }
@@ -29,6 +29,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    if (this.scrollSub) { this.scrollSub.unsubscribe(); }
+
   }
 }

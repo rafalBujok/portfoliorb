@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ScrollSpyDirective } from './scroll-spy.directive';
+import { ScrollSpyDirective } from './directives/scroll-spy.directive';
 import { TitleComponent } from './title/title.component';
 import { Slide2Component } from './slide2/slide2.component';
 import { Slide3Component } from './slide3/slide3.component';
@@ -20,9 +20,7 @@ import { MatCardModule } from '@angular/material/card';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-export const createTranslateLoader = (http: HttpClient) => {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
+
 
 
 
@@ -63,3 +61,7 @@ export const createTranslateLoader = (http: HttpClient) => {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

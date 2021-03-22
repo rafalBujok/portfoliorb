@@ -4,7 +4,7 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ScrollserviceService {
+export class ScrollService {
 
   private sesion = new Subject<any>();
 

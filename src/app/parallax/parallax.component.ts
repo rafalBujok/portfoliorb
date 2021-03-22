@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ScrollserviceService } from '../scrollservice.service';
+import { ScrollService } from '../services/scroll.service';
 import AOS from 'aos';
 @Component({
   selector: 'app-parallax',
@@ -8,7 +8,7 @@ import AOS from 'aos';
 })
 export class ParallaxComponent implements OnInit {
 
-  constructor(private srv: ScrollserviceService) {
+  constructor(private srv: ScrollService) {
   }
   ngOnInit(): void {
     AOS.init();

@@ -1,4 +1,32 @@
-<div class="nav">
+<nav class="navbar navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand">
+      {{'nav.home' | translate }}
+    </a>
+        <span class="form-inline">
+      <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language }}
+        </option>
+      </select>
+    </span>
+    </div>
+</nav>
+
+<div class="container">
+    <form>
+
+        <div class="form-group">
+            <label>{{'nav.about' | translate}}</label>
+            <input type="text" class="form-control">
+
+        </div>
+
+    </form>
+</div>
+
+<!-- <div class="nav">
     <app-navbar class="nav">
     </app-navbar>
 </div>
@@ -6,4 +34,4 @@
     <app-parallax>
 
     </app-parallax>
-</div>
+</div> -->
