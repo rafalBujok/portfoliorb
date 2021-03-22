@@ -14,7 +14,7 @@ import { Slide4Component } from './slide4/slide4.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Slide1Component } from './slide1/slide1.component';
 import { TechnologyDisplayComponent } from './slide2/technology-display/technology-display.component';
-import { ProjektyDisplayComponent } from './slide3/projekty-display/projekty-display.component';
+
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -36,7 +36,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     Slide3Component,
     Slide4Component,
     TechnologyDisplayComponent,
-    ProjektyDisplayComponent,
+
 
   ],
   imports: [

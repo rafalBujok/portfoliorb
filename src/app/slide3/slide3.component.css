@@ -44,3 +44,61 @@
         letter-spacing: 1px;
     }
 }
+
+.card-image {
+    width: auto;
+    display: block;
+    max-height: 400px;
+    box-shadow: 0 0 5px 10px #555;
+}
+
+.card {
+    width: 100%;
+    align-content: center;
+    border: none;
+    background-color: rgba(219, 209, 207, 0.678);
+}
+
+.mat-tab-labels {
+    font-size: 18px;
+}
+
+.card-subtitle {
+    font-size: 17px;
+}
+
+.card-header {
+    background-color: transparent;
+    align-content: center;
+    margin-left: 10%;
+    border: none;
+    font-size: 18px;
+}
+
+.text-name {
+    font-size: 350%;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+.text-content {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .card-image {
+        width: 100%;
+    }
+    .card-header {
+        width: 95%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .card-title {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        padding: 0px;
+    }
+}
