@@ -1,5 +1,64 @@
 <h1 data-aos="fade-up" class="text-center text-name">{{'nav.projects'|translate|titlecase}}</h1>
 <mat-tab-group mat-align-tabs="center">
+    <!-- 5 -->
+    <div>
+        <mat-tab label="{{'project5.title'|translate|titlecase}}" class="content text-center">
+            <mat-card class="card m-auto">
+                <mat-card-header class="card-header">
+
+                    <mat-card-title class="card-title">
+                        <h2>{{'project5.title'|translate}}</h2>
+                    </mat-card-title>
+                    <mat-card-subtitle class="card-subtitle ">
+                        <p>{{'project5.info'|translate}}</p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+                <img mat-card-image class="card-image m-auto" [src]=[project5.imageUrl]>
+                <mat-card-content class="card-header">
+                    <p>{{'technologyUsed'|translate|titlecase}}</p>
+                    <p>
+                        {{project5.technology}}
+                    </p>
+                </mat-card-content>
+
+                <mat-card-actions class="text-center mb-3">
+                    <button mat-button (click)="openPage(project5.gitUrl)">GIT</button>
+                    <button mat-button (click)="openPage(project5.liveUrl)">LIVE</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-tab>
+    </div>
+    <!-- 4 -->
+    <div>
+        <mat-tab label="{{'project4.title'|translate|titlecase}}" class="content text-center">
+            <mat-card class="card m-auto">
+                <mat-card-header class="card-header">
+
+                    <mat-card-title class="card-title">
+                        <h2>{{'project4.title'|translate}}</h2>
+                    </mat-card-title>
+                    <mat-card-subtitle class="card-subtitle ">
+                        <p>{{'project4.info'|translate}}</p>
+                    </mat-card-subtitle>
+
+                </mat-card-header>
+                <img mat-card-image class="card-image m-auto" [src]=[project4.imageUrl]>
+                <mat-card-content class="card-header">
+                    <p>{{'technologyUsed'|translate|titlecase}}</p>
+                    <p>
+                        {{project4.technology}}
+                    </p>
+                </mat-card-content>
+
+                <mat-card-actions class="text-center mb-3">
+                    <button mat-button (click)="openPage(project4.gitUrl)">GIT</button>
+                    <button mat-button (click)="openPage(project4.liveUrl)">LIVE</button>
+                </mat-card-actions>
+            </mat-card>
+        </mat-tab>
+    </div>
+    <!-- 3 -->
     <div>
         <mat-tab label="{{'project3.title'|translate|titlecase}}" class="content text-center">
             <mat-card class="card m-auto">
@@ -28,6 +87,7 @@
             </mat-card>
         </mat-tab>
     </div>
+    <!-- 2 -->
     <div>
         <mat-tab label="{{'project2.title'|translate|titlecase}}" class="content text-center">
             <mat-card class="card m-auto">
@@ -56,6 +116,7 @@
             </mat-card>
         </mat-tab>
     </div>
+    <!-- 1 -->
     <div>
         <mat-tab label="{{'project1.title'|translate|titlecase}}" class="content text-center">
             <mat-card class="card m-auto">
@@ -84,6 +145,7 @@
             </mat-card>
         </mat-tab>
     </div>
+    <!-- 0 -->
     <div>
         <mat-tab label="{{'project0.title'|translate|titlecase}}" class="content text-center">
             <mat-card class="card m-auto">

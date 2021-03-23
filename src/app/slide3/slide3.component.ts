@@ -7,10 +7,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 
 export class Slide3Component {
+  project5 = {
+    'liveUrl': 'https://jsonplanceholdertest.web.app/',
+    'gitUrl': 'https://github.com/rafalBujok/JSONPlaceholder',
+    'imageUrl': 'assets/jsonplaceholder.png',
+    'technology':'Angular, NgRx, JavaScript, TypeScript, RxJs, Bootstrap, Material Design'
+  }
   project4 = {
     'liveUrl': 'https://unsplashtest.web.app/',
     'gitUrl': 'https://github.com/rafalBujok/UnsplashApp',
-    'imageUrl': 'assets/dogShop.png',
+    'imageUrl': 'assets/unsplash.jpg',
     'technology':'Angular, JavaScript, TypeScript, RxJs, SASS, Bootstrap, Material Design'
   }
   project3 = {
@@ -29,7 +35,7 @@ export class Slide3Component {
     'liveUrl': 'https://mojagraaa.web.app/bohater',
     'gitUrl': 'https://github.com/rafalBujok/warhammer',
     'imageUrl': 'assets/warhammer.jpg',
-    'technology':'Angular, JavaScript, TypeScript, CSS3, Firebase, Bootstrap, Material Design'
+    'technology':'Angular, JavaScript, TypeScript, Firebase, Bootstrap, Material Design'
   }
   project0 = {
     'liveUrl': 'https://radogostbandpl.firebaseapp.com/',
