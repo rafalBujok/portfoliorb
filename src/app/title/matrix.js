@@ -2,6 +2,17 @@ exports.start = function start() {
     var can = document.getElementById("can1");
     var ctx = can.getContext("2d");
 
+    window.onresize = function(event) {
+        can.height = window.innerHeight + 20;
+        can.width = window.innerWidth;
+        columns = can.width / font_size;
+        drops = [];
+        for (var x = 0; x < columns; x++) {
+            drops[x] = 100;
+        }
+        oldText = [];
+    }
+
     //making the canvas full screen
     can.height = window.innerHeight + 20;
     can.width = window.innerWidth;
@@ -17,8 +28,9 @@ exports.start = function start() {
     var drops = [];
     //x below is the x coordinate
     //1 = y co-ordinate of the drop(same for every drop initially)
-    for (var x = 0; x < columns; x++)
+    for (var x = 0; x < columns; x++) {
         drops[x] = 100;
+    }
     var oldText = [];
 
 
