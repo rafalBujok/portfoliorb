@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 830) {
       this.smallDevice = true;
     }
     else { this.smallDevice = false; this.smallMenu = false; }
@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
         this.currentSection = res.value;
       }
     });
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 830) {
       this.smallDevice = true;
     };
 

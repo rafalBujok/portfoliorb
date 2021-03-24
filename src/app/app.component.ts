@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'pl']);
-    translate.setDefaultLang('pl');
+    translate.setDefaultLang('en');
     translate.use('en');
   }
   title = 'portfolio-rb';
